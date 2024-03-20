@@ -104,14 +104,14 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 flex flex-col h-full">
           <p className="text-base lg:text-lg">
-            I'm a dedicated FullStack Developer with experience in both Backend
+            I&apos;m a dedicated FullStack Developer with experience in both Backend
             and Frontend. Strongly committed to creating accessible and
             user-centric websites and applications. <br />
             My current focus revolves around using
             <b className="text-xl mx-2">
               React, Bootstrap, Node.js, TypeScript, Tailwind
             </b>
-            (among others) to build dynamic and engaging web applications. Let's
+            (among others) to build dynamic and engaging web applications. Let&apos;s
             connect and collaborate to build immersive digital experiences!
           </p>
           <div className="flex flex-row justify-start mt-8">
