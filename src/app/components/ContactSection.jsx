@@ -18,7 +18,7 @@ const ContactSection = () => {
       <div className="grid md:grid-cols-2   gap-4">
         <div className="">
           <p className="text-[#ADB7BE] mb-4 max-w-md">
-          Need to get in touch? Feel free to reach out on my socials or write me an email at: ariadnamaldonadogrieco@gmail.com. I&apos;m always interested in hearing about exciting new opportunities!
+          Need to get in touch? Feel free to reach out on my socials or write me an email at: <b>ariadnamaldonadogrieco@gmail.com.</b> I&apos;m always interested in hearing about exciting new opportunities!
           </p>
         </div>
         <div className="grid place-content-center justify-items-center h-auto grid-cols-3 gap-6 md:gap-8 mt-6 md:mt-0 mb-10 md:mb-0">

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -30,7 +31,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl my-12">
-            And this is my portfolio. Here you will find a showcase of my best work, places to contact me, and relevant info about me. <br/> Have a look around!
+            And this is my portfolio. Here you will find a showcase of my best
+            work, places to contact me, and relevant info about me. <br /> Have
+            a look around!
           </p>
           <div className="mt-12 lg:mt-0">
             <a
@@ -50,13 +53,15 @@ const HeroSection = () => {
         </div>
         <div className="col-span-5 place-self-center mt-16 lg:mt-0">
           <div className="rounded-full overflow-hidden bg-[#181818] w-[310px] h-[310px] lg:w-[320px] lg:h-[320px] relative">
-            <Image
-              src="/images/hero-image.png"
-              alt="hero image"
-              className="absolute transform rounded-full -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%] "
-              width={300}
-              height={300}
-            />
+            <Link target="_blank" href="https://www.linkedin.com/in/ariadnamgrieco/">
+              <Image
+                src="/images/hero-image.png"
+                alt="A woman with red hair and a soft smile working on her Web Development Projects"
+                className="absolute transform rounded-full -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%] "
+                width={300}
+                height={300}
+              />
+            </Link>
           </div>
         </div>
       </div>
