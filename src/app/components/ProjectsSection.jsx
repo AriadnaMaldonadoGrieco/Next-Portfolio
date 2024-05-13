@@ -32,7 +32,7 @@ const projectsData = [
         <p className="text-base mt-4">
           Development of portfolio website for a graphic Designer in order to
           showcase their experience. Based on HTML, CSS, and JavaScript as per
-          the client's request. <br /> With code repository and versioning on
+          the client&apos;s request. <br /> With code repository and versioning on
           Git and GitHub, using WSL Ubuntu, and design made and shared on Figma
           by the designer. Close collaboration with the client in identifying
           and defining project requirements, with several meetings for progress
