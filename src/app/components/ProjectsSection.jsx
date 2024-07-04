@@ -6,9 +6,8 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: <h2 className="text-xl sm:text-2xl">Nextjs Portfolio Website</h2>,
+    title: <p className="text-xl sm:text-2xl">Nextjs Portfolio Website</p>,
     description: (
-      <div className="min-h-[192px]">
         <p className="text-base">
           You are here! <br />
           My portfolio page made with Nextjs and Tailwind. Includes all ways to
@@ -17,7 +16,6 @@ const projectsData = [
           be updated constantly with new projects for my clients and personal
           projects, so keep checking it to stay on the loop of my advances.
         </p>
-      </div>
     ),
     image: "/images/projects/portfolioimg.png",
     tag: ["All", "Personal"],
@@ -26,9 +24,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: <h2 className="text-xl sm:text-2xl">Designer Portfolio</h2>,
+    title: <p className="text-xl sm:text-2xl">Designer Portfolio</p>,
     description: (
-      <div className="min-h-[192px]">
         <p className="text-base mt-4">
           Development of portfolio website for a graphic Designer in order to
           showcase their experience. Based on HTML, CSS, and JavaScript as per
@@ -38,7 +35,6 @@ const projectsData = [
           and defining project requirements, with several meetings for progress
           and adjustments.
         </p>
-      </div>
     ),
     image: "/images/client.png",
     tag: ["All", "Professional"],
@@ -48,9 +44,8 @@ const projectsData = [
   },
   {
     id: 3,
-    title: <h2 className="text-xl sm:text-2xl">Ágora</h2>,
+    title: <p className="text-xl sm:text-2xl">Ágora</p>,
     description: (
-      <div className="min-h-[192px]">
         <p className="text-base mt-4">
           Development and maintenance of a web application designed to provide
           tools for professionals to offer their services and events from a
@@ -62,7 +57,6 @@ const projectsData = [
           of WSL Ubuntu terminal. Employment of Jira for task management (Kanban
           methodology)
         </p>
-      </div>
     ),
     image: "/images/projects/agora.png",
     tag: ["All", "Professional"],
@@ -80,15 +74,13 @@ const projectsData = [
   // },
   {
     id: 5,
-    title: <h2 className="text-xl sm:text-2xl">Online Restaurant Menu</h2>,
+    title: <p className="text-xl sm:text-2xl">Online Restaurant Menu</p>,
     description: (
-      <div className="min-h-[192px]">
         <p className="text-base mt-4">
           A burger restaurant menu with a side navbar. Use of HTML and CSS.{" "}
           <br />
           Made to practice making mobile friendly pages with a side navbar.
         </p>
-      </div>
     ),
     image: "/images/projects/burgermenu.png",
     tag: ["All", "Personal"],
