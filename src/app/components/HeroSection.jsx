@@ -43,7 +43,7 @@ const HeroSection = () => {
               Hire me
             </a>
             <a
-              href="./Web-Developer-Ariadna-Maldonado.pdf"
+              href="./CV Web Developer Ariadna Maldonado 2024.pdf"
               download={""}
               className="px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3"
             >
