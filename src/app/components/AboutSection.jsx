@@ -213,7 +213,7 @@ const TAB_DATA = [
         <div className="flex flex-col max-h-80 min-h-80 p-5 text-left">
           <div className="flex items-end flex-row mb-6">
             <Image
-              src="/images/platzi-icon.png"
+              src="/images/icons/platzi-icon.png"
               width={40}
               height={40}
               alt=""
@@ -242,7 +242,7 @@ const TAB_DATA = [
         <div className="flex flex-col max-h-80 min-h-80 p-5 text-left mt-8">
           <div className="flex items-end flex-row mb-6">
             <Image
-              src="/images/platzi-icon.png"
+              src="/images/icons/platzi-icon.png"
               width={40}
               height={40}
               alt="company I worked for"
@@ -285,7 +285,7 @@ const TAB_DATA = [
                   </Link>
                 </div>
                 <Image
-                  src="/images/eflogo.png"
+                  src="/images/icons/eflogo.png"
                   width={30}
                   height={30}
                   alt="company I worked for"
@@ -356,7 +356,7 @@ const AboutSection = () => {
               <p className="text-xl">Certifications</p>
             </TabButton>
           </div>
-          <div className="mt-8 overflow-y-scroll max-h-80 min-h-80 .scrollbar-thin .scrollbar-webkit">
+          <div className="mt-8 overflow-y-scroll max-h-80 min-h-80">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
