@@ -2,35 +2,206 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <div className="grid  min-h-[360px]">
-        <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 list-none pl-2 text-sm md:text-xl">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>Typescript</li>
-          <li>React</li>
-          <li>Nextjs</li>
-          <li>Tailwind</li>
-          <li>Bootstrap</li>
-          <li>Styled Components</li>
-          <li>Nodejs</li>
-          <li>Git</li>
-          <li>Github</li>
-          <li>ESlint</li>
-          <li>Prettier</li>
-          <li>WSL Ubuntu</li>
-          <li>Jira</li>
-          <li>Figma</li>
-          <li>GIMP</li>
-          <li>Photoshop</li>
-          <li>Slack</li>
-        </ul>
+      <div className="px-3">
+        <div className="my-5">
+          <div className=" font-bold text-lg md:text-2xl text-left mb-6 whitespace-break-spaces max-w-96">
+            Technologies, Frameworks
+             and relevant software:
+          </div>
+          <ul className=" grid grid-cols-2 md:grid-cols-3 ">
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/HTML5.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              HTML
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/CSS3.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              CSS
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/JavaScript.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3 "
+              ></Image>
+              Javascript
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/TypeScript.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Typescript
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/React.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              React
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Next.js.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Nextjs
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/TailwindCSS.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Tailwind
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Bootstrap.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Bootstrap
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Node.js.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Nodejs
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Git.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Git
+            </div>
+          </ul>
+          <div className=" font-bold text-lg md:text-2xl text-left mt-9 mb-6">
+            Design, Dev and additional tools:
+          </div>
+          <ul className=" grid grid-cols-2 md:grid-cols-3 ">
+            <div className="my-4 flex flex-col items-center">
+              <FontAwesomeIcon
+                className="text-white text-8xl m-4"
+                icon={faGithub}
+              />
+              Github
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/ESLint.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              ESlint
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Ubuntu.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              WSL Ubuntu
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Jira.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Jira
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Figma.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Figma
+            </div>
+            <div className="my-4 flex flex-col justify-center items-center">
+              <Image
+                src="/images/icons/GIMP.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              GIMP
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/Slack.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              Slack
+            </div>
+            <div className="my-4 flex flex-col items-center">
+              <Image
+                src="/images/icons/VSCode.png"
+                width={100}
+                height={100}
+                alt=""
+                className="rounded-xl m-3"
+              ></Image>
+              VSCode
+            </div>
+          </ul>
+        </div>
       </div>
     ),
   },
@@ -39,44 +210,94 @@ const TAB_DATA = [
     id: "education",
     content: (
       <div className="max-h-[360px] text-left">
-        <h3 className="mb-5 text-xl text-left">
-          <b>Platzi Courses:</b>
-        </h3>
-        <div className="grid">
-          <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 list-none pl-2 text-sm md:text-xl">
-            <li>English academy</li>
-            <li>Programming Fundamentals</li>
-            <li>Terminal and commands</li>
-            <li>Git and Github</li>
-            <li>Design for Developers</li>
-            <li>Frontend Fundamentals</li>
-            <li>HTML and CSS</li>
-            <li>Javascript</li>
-            <li>Asynchronism</li>
-            <li>ECMAScript</li>
-            <li>Typescript</li>
-            <li>React.Js</li>
-            <li>Tailwind</li>
-            <li>Bootstrap</li>
-            <li>Backend Fundamentals</li>
-            <li>Node.Js</li>
-            <li>MySQL</li>
-            <li>Next.Js</li>
+        <div className="flex flex-col max-h-80 min-h-80 p-5 text-left">
+          <div className="flex items-end flex-row mb-6">
+            <Image
+              src="/images/platzi-icon.png"
+              width={40}
+              height={40}
+              alt=""
+              className="flex self-start rounded-md mr-3"
+            />
+            <div className="text-base md:text-xl font-bold whitespace-break-spaces">
+              Platzi - Web Development relevant courses:
+            </div>
+          </div>
+          <div className="grid">
+            <ul className="grid grid-cols-2 gap-4 list-none pl-2 text-sm md:text-lg">
+              <li>HTML and CSS</li>
+              <li>Javascript</li>
+              <li>Asynchronism</li>
+              <li>ECMAScript</li>
+              <li>Typescript</li>
+              <li>React.Js</li>
+              <li>Tailwind</li>
+              <li>Bootstrap</li>
+              <li>Node.Js</li>
+              <li>MySQL</li>
+              <li>Next.Js</li>
+            </ul>
+          </div>
+        </div>
+        <div className="flex flex-col max-h-80 min-h-80 p-5 text-left mt-8">
+          <div className="flex items-end flex-row mb-6">
+            <Image
+              src="/images/platzi-icon.png"
+              width={40}
+              height={40}
+              alt="company I worked for"
+              className="flex self-start rounded-md mr-3"
+            />
+            <div className="text-base md:text-xl font-bold whitespace-pre">
+              Platzi Fundamental Courses:
+            </div>
+          </div>
+          <div className="grid">
+            <ul className="grid grid-cols-2 gap-4 list-none pl-2 text-sm md:text-lg">
+              <li>English academy</li>
+              <li>Programming Fundamentals</li>
+              <li>Terminal and commands</li>
+              <li>Git and Github</li>
+              <li>Design for Developers</li>
+              <li>Frontend Fundamentals</li>
+              <li>Backend Fundamentals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <div className="max-h-80 min-h-80 text-left">
+        <div className="my-5">
+          <div className=" font-bold text-base md:text-xl text-left">
+            Advanced English level certification:
+          </div>
+          <ul className="list-none pl-2 mt-3">
+            <div className="flex flex-col max-h-80 min-h-80 p-5 text-left">
+              <div className="flex items-end flex-row mb-7">
+                <div className=" text-base md:text-lg underline underline-offset-2 font-bold mr-3 whitespace-pre">
+                  <Link target="_blank" href="https://cert.efset.org/b9diuv">
+                    EF C2 English level
+                  </Link>
+                </div>
+                <Image
+                  src="/images/eflogo.png"
+                  width={30}
+                  height={30}
+                  alt="company I worked for"
+                  className="flex self-start rounded-md "
+                />
+              </div>
+            </div>
           </ul>
         </div>
       </div>
     ),
   },
-  // {
-  //   title: "Certifications",
-  //   id: "certifications",
-  //   content: (
-  //     <ul className="list-disc pl-2">
-  //       <li>AWS Cloud Practitioner</li>
-  //       <li>Google Professional Cloud Developer</li>
-  //     </ul>
-  //   ),
-  // },
 ];
 
 const AboutSection = () => {
@@ -128,8 +349,14 @@ const AboutSection = () => {
             >
               <p className="text-xl">Education</p>
             </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("certifications")}
+              active={tab === "certifications"}
+            >
+              <p className="text-xl">Certifications</p>
+            </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 overflow-y-scroll max-h-80 min-h-80 .scrollbar-thin .scrollbar-webkit">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
