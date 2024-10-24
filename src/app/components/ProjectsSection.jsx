@@ -81,6 +81,28 @@ const projectsData = [
     githubUrl: "https://www.linkedin.com/company/agora-red/",
     previewUrl: "https://agora.red/",
   },
+  {
+    id: 5,
+    title: <p className="text-xl sm:text-2xl">Social Media Dashboard</p>,
+    description: (
+      <p className="text-base mt-4">
+        Social Media Dashboard that provides key statistics about followers,
+        views, and other relevant data across various social media platforms for
+        a determined account.
+        <br />
+        Made with React and Typescript. Sass employed for styling. Use of
+        Recharts library to showcase charts for followers growth. <br />
+        Fully responsive design. Has the option to toggle between light and dark
+        themes with a toggle.
+      </p>
+    ),
+    image: "/images/projects/social-dashboard.jpg",
+    tag: ["All", "Personal"],
+    githubUrl:
+      "https://github.com/AriadnaMaldonadoGrieco/Social-media-Dashboard",
+    previewUrl:
+      "https://social-media-dashboard-ariadnamaldonadogriecos-projects.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
